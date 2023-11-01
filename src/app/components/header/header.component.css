@@ -1,0 +1,33 @@
+body {
+  font-family: ProximaNova, arial, Helvetica Neue, sans-serif;
+}
+
+.location {
+  font-size: 1.1em;
+  font-weight: 600;
+}
+
+/* .nav-item > .nav-link:hover,
+svg:hover {
+  color: rgb(255, 85, 0);
+} */
+
+.shopcount{
+  color: rgb(255, 85, 0);
+}
+
+.search:focus {
+  border: 2px solid rgb(189, 91, 42);
+  caret-color: rgb(255, 85, 0);
+}
+
+.header {
+  box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.2);
+  padding: 1em 0.8em;
+  background-color: rgb(247, 135, 55);
+}
+.navbar-nav>.nav-item>a{
+color: rgb(255, 255, 255);
+font-size: large;
+
+}

@@ -1,0 +1,10 @@
+#listtime>li>span{
+color: rgb(255, 94, 0);
+}
+#listtime>li{
+  color: rgb(83, 83, 83);
+}
+.ingredsContainer{
+  flex-direction: row;
+  flex-wrap: wrap;
+}

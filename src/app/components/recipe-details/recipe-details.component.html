@@ -1,0 +1,70 @@
+<div class="container" style="padding-top: 5rem">
+  <div class="row overflow-hidden">
+    <div class="d-flex justify-content-around">
+      <div class="productimage col-3">
+        <img
+          style="border-radius: 0.5rem"
+          *ngIf="RecipeArr"
+          src="{{ RecipeArr.image }}"
+          height="170"
+          width="250"
+          alt=""
+        />
+      </div>
+      <div class="header-content">
+        <h4 *ngIf="RecipeArr">{{ RecipeArr.name }}</h4>
+        <div class="desc">
+          <p *ngIf="RecipeArr">{{ RecipeArr.description }}</p>
+        </div>
+      </div>
+    </div>
+    <div class="Instructions">
+      <h2 class="text-center">Directions</h2>
+
+      <div class="col-12 d-flex justify-content-center">
+        <div class="col-10">
+          <ul id="listtime">
+            <li>
+              Preparation Time:
+              <span *ngIf="RecipeArr">{{ RecipeArr.prepTime }}</span> minutes
+            </li>
+            <li>
+              Cooking Time:
+              <span *ngIf="RecipeArr">{{ RecipeArr.cookTime }}</span> minutes
+            </li>
+            <li>
+              Total Time:
+              <span *ngIf="RecipeArr">{{ RecipeArr.totalTime }}</span> minutes
+            </li>
+          </ul>
+          <p class="word-wrap" *ngIf="RecipeArr">{{ RecipeArr.description }}</p>
+        </div>
+      </div>
+    </div>
+    <div class="Ingredients">
+      <h1 class="text-center pb-4">Ingredients</h1>
+      <div class="d-flex justify-content-evenly ingredsContainer text-center">
+        <div
+          *ngFor="let ingred of RecipeArr.ingredients; index as i"
+          style="border-radius: 0.5rem"
+          class="col-3 mb-2"
+        >
+          <button
+            class="btn btn-outline-success w-75"
+            *ngIf="!ingred.IsAdded"
+            (click)="AddToCart(i, ingred.ing1)"
+          >
+            {{ ingred.ing1 }} +
+          </button>
+          <button
+            class="btn btn-outline-danger w-75"
+            *ngIf="ingred.IsAdded"
+            (click)="removeFromCart(i, ingred.ing1)"
+          >
+            {{ ingred.ing1 }} -
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

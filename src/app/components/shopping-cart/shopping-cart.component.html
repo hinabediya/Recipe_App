@@ -1,0 +1,15 @@
+<div class="container" style="padding-top: 5rem">
+  <div class="row">
+    <div *ngFor="let cartitem of shoppingCart; index as i" style="border: 1px solid rgb(234, 93, 42);" class="pb-2 pt-2 mb-3 rounded d-flex justify-content-around flex-row flex-wrap">
+<div class="col-4">
+  <img height="100" width="200" src="https://www.bakingbusiness.com/ext/resources/2019/1/01142019/Ingredients2019.jpg?height=667&t=1547588432&width=1080" class="rounded" alt="">
+</div>
+<div class="col-4 text-center pb-4 pt-4">
+  {{cartitem}}
+</div>
+<div class="col-4 text-end pb-4 pt-4">
+  <button (click)="removeItem(i,cartitem.name)" class="btn btn-danger w-50">delete</button>
+</div>
+    </div>
+  </div>
+</div>
