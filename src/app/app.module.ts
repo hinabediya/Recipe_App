@@ -11,6 +11,7 @@ import { FooterComponent } from './components/footer/footer.component';
 import { RecipeDetailsComponent } from './components/recipe-details/recipe-details.component';
 import { ShippingCartComponent } from './components/shopping-cart/shopping-cart.component';
 import { AddRecipeComponent } from './components/add-recipe/add-recipe.component';
+import { ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,7 @@ import { AddRecipeComponent } from './components/add-recipe/add-recipe.component
     ShippingCartComponent,
     AddRecipeComponent,
   ],
-  imports: [BrowserModule, AppRoutingModule, HttpClientModule],
+  imports: [BrowserModule, AppRoutingModule, HttpClientModule,ReactiveFormsModule],
   providers: [],
   bootstrap: [AppComponent],
 })

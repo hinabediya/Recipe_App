@@ -304,6 +304,35 @@
       "prepTime": "60-150",
       "cookTime": "30",
       "totalTime": "90-180"
+    },
+    {
+      "id": 6,
+      "name": "baigan ka bharta",
+      "image": "https://th.bing.com/th/id/OIP.4mCdvFQBj4i9IR46id9l1wHaGL?pid=ImgDet&rs=1",
+      "shortDescription": "In Hindi, the word ‘baigan’ means scrambled so this dish is basically scrambled paneer or cottage cheese.",
+      "description": "In Hindi, the word ‘baigan’ means scrambled so this dish is basically scrambled paneer or cottage cheese. A perfectly savory, tangy, spiced mixture made of onions, tomatoes, ginger-garlic paste, green chillies (hot peppers) and various spices is then used to mix with the scrambled paneer. This Paneer Bhurji Recipe is Punjabi Style and way it is made in my home.",
+      "rating": "4.1",
+      "ingredients": [
+        {
+          "ing1": "Haldi",
+          "IsAdded": false
+        },
+        {
+          "ing1": "Jeera",
+          "IsAdded": false
+        },
+        {
+          "ing1": "Dhaniya",
+          "IsAdded": false
+        },
+        {
+          "ing1": "Baigan",
+          "IsAdded": false
+        }
+      ],
+      "prepTime": 10,
+      "cookTime": 40,
+      "totalTime": 50
     }
   ]
 }

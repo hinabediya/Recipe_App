@@ -1,1 +1,52 @@
-<p>add-recipe works!</p>
+<div class="container" style="padding-top: 5rem;">
+  <div class="row">
+    <div class="col-lg-6 col-sm-12">
+      <h6 class="pb-3" style="color: rgb(90, 85, 81);">Hi, we are glad that you're willing to add new recipe on our App.</h6>
+      <form action="" [formGroup]="recipies" >
+  <input type="text" name="name" id="name" class="form-control form-control-sm mb-3 w-75" formControlName="name" placeholder="Enter Recipe Name*" >
+  <input type="text" name="image" id="image" class="form-control form-control-sm mb-3 w-75" formControlName="image" placeholder="Enter Image URL*" >
+  <input type="text" name="shortDescription" id="shortDescription" class="form-control form-control-sm mb-3 w-75" formControlName="shortDescription" placeholder="Enter Recipe's Short Description*" >
+  <input type="text" name="description" id="description" class="form-control form-control-sm mb-3 w-75" formControlName="description" placeholder="Enter Recipe's Description*" >
+  <input type="number" name="rating" id="rating" class="form-control form-control-sm mb-3 w-75" formControlName="rating" placeholder="Enter Recipe Rating*" >
+  <input type="number" name="prepTime" id="prepTime" class="form-control form-control-sm mb-3 w-75" formControlName="prepTime" placeholder="Enter Recipe's preparation Time*" >
+  <input type="number" name="cookTime" id="cookTime" class="form-control form-control-sm mb-3 w-75" formControlName="cookTime" placeholder="Enter Recipe's cooking Time*" >
+  <!-- <input type="text" name="totalTime" id="totalTime" class="form-control form-control-sm mb-3 w-75" formControlName="totalTime" placeholder="Enter Recipe total Time*" > -->
+  <div formArrayName="ingredients" class="mb-3">
+    <div *ngFor="let ingredient of formData.controls; let i = index">
+      <div class="ingredient-item mb-2 d-flex justify-content-between col-9">
+        <input [formControlName]="i" class="form-control form-comtrol-sm w-75" placeholder="Ingredient {{ i + 1 }}">
+        <button class="btn btn-outline-danger" (click)="removeIngredient(i)">Remove</button>
+      </div>
+    </div>
+    <button class="btn btn-outline-success " (click)="addIngredient()">Add Ingredient</button>
+  </div>
+  <button [disabled]="!recipies.valid"  (click)="onSubmit()" class="btn btn-success w-75" type="submit">Add Recipe</button> 
+</form>
+    </div>
+    <div class="col-lg-6 col-sm-12"></div>
+  </div>
+</div>
+<div
+  class="modal"
+  tabindex="-1"
+  role="dialog"
+  [ngStyle]="{'display':displayStyle}"> 
+  <div class="modal-dialog" role="document"> 
+    <div class="modal-content"> 
+      <div class="modal-header"> 
+        <h4 class="modal-title">success</h4> 
+      </div> 
+      <div class="modal-body"> 
+        <p>Recipe Added Succesfully !</p> 
+  
+      </div> 
+      <div class="modal-footer"> 
+        <button type="button" class="btn btn-danger" 
+                (click)="closePopup()"> 
+          Close 
+        </button> 
+      </div> 
+    </div> 
+  </div> 
+</div>
+<div class="modal-backdrop show" [ngStyle]="{'display':displayStyle}" ></div>

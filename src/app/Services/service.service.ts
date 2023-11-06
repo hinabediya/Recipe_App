@@ -21,4 +21,14 @@ getByID(id:number):Observable<IRecipe[]>{
 return this.http.get<IRecipe[]>(`${this.url}/${id}`);
 }
 
+readdRecipe(data:any){
+  return this.http.post(this.url,data).subscribe((response:any)=>{
+if(response.status===201){
+  console.log('POST request was successful. Resource created.');
+}
+  },
+  (error:any)=>{
+    console.error('POST request failed:', error);
+  });
+}
 }

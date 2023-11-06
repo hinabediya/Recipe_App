@@ -1,9 +1,9 @@
-.card{
-  position:inherit;
-width: 22rem;
-margin-bottom: 1rem;
+.card {
+  position: inherit;
+  width: 22rem;
+  margin-bottom: 1rem;
 }
-.card-container{
+.card-container {
   flex-direction: row;
-  flex-wrap: wrap;;
+  flex-wrap: wrap;
 }

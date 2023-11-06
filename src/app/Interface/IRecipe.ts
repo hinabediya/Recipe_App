@@ -6,7 +6,7 @@ description:string;
 rating:number;
 ingredients:[];
 shortDescription:string;
-prepTime:string;
-cookTime:string;
-totalTime:string;
+prepTime:number;
+cookTime:number;
+totalTime:number;
 }

@@ -7,9 +7,9 @@
     "description":"Biryani rice is mixed rice dish eaten in many countries with different styles. It is made with spices, rice, vegetables, or meat. This flavorful Indian style biryani rice dish is easy to cook, and is great for vegetarian or non-vegetarian meals.",
     "rating":4,
     "ingredients":[{"ing1":"onion","IsAdded":false},{"ing1":"tomato","IsAdded":false},{"ing1":"cinnamon","IsAdded":false},{"ing1":"cloves","IsAdded":false},{"ing1":"cardamom","IsAdded":false},{"ing1":"Cashew nuts","IsAdded":false},{"ing1":"Garam Masala powder","IsAdded":false},{"ing1":"chili powder","IsAdded":false},{"ing1":"ghee","IsAdded":false},{"ing1":"Basmati Rice","IsAdded":false},{"ing1":"salt","IsAdded":false},{"ing1":"pepper","IsAdded":false}],
-    "prepTime": "60-150",
-    "cookTime": "30",
-    "totalTime": "90-180" 
+    "prepTime": 60,
+    "cookTime": 30,
+    "totalTime": 90 
   },
   {
     "id":2,
@@ -19,9 +19,9 @@
     "shortDescription":"Biryani rice is mixed rice dish eaten in many countries with different styles. It is made with spices, rice, vegetables, or meat.",
     "rating":4.5,
     "ingredients":[{"ing1":"onion","IsAdded":false},{"ing1":"tomato","IsAdded":false},{"ing1":"cinnamon","IsAdded":false},{"ing1":"cloves","IsAdded":false},{"ing1":"cardamom","IsAdded":false},{"ing1":"Cashew nuts","IsAdded":false},{"ing1":"Garam Masala powder","IsAdded":false},{"ing1":"chili powder","IsAdded":false},{"ing1":"ghee","IsAdded":false},{"ing1":"Basmati Rice","IsAdded":false},{"ing1":"salt","IsAdded":false},{"ing1":"pepper","IsAdded":false}],
-    "prepTime": "60-150",
-    "cookTime": "30",
-    "totalTime": "90-180" 
+    "prepTime": 60,
+    "cookTime": 30,
+    "totalTime": 90 
   },
   {
     "id":3,
@@ -31,9 +31,9 @@
     "shortDescription":"Biryani rice is mixed rice dish eaten in many countries with different styles. It is made with spices, rice, vegetables, or meat.",
     "rating":4.2,
     "ingredients":[{"ing1":"onion","IsAdded":false},{"ing1":"tomato","IsAdded":false},{"ing1":"cinnamon","IsAdded":false},{"ing1":"cloves","IsAdded":false},{"ing1":"cardamom","IsAdded":false},{"ing1":"Cashew nuts","IsAdded":false},{"ing1":"Garam Masala powder","IsAdded":false},{"ing1":"chili powder","IsAdded":false},{"ing1":"ghee","IsAdded":false},{"ing1":"Basmati Rice","IsAdded":false},{"ing1":"salt","IsAdded":false},{"ing1":"pepper","IsAdded":false}],
-    "prepTime": "60-150",
-    "cookTime": "30",
-    "totalTime": "90-180"  
+    "prepTime": 60,
+    "cookTime": 30,
+    "totalTime": 90  
   },
   {
     "id":4,
@@ -43,8 +43,8 @@
     "shortDescription":"Biryani rice is mixed rice dish eaten in many countries with different styles. It is made with spices, rice, vegetables, or meat.",
     "rating":4.7,
     "ingredients":[{"ing1":"onion","IsAdded":false},{"ing1":"tomato","IsAdded":false},{"ing1":"cinnamon","IsAdded":false},{"ing1":"cloves","IsAdded":false},{"ing1":"cardamom","IsAdded":false},{"ing1":"Cashew nuts","IsAdded":false},{"ing1":"Garam Masala powder","IsAdded":false},{"ing1":"chili powder","IsAdded":false},{"ing1":"ghee","IsAdded":false},{"ing1":"Basmati Rice","IsAdded":false},{"ing1":"salt","IsAdded":false},{"ing1":"pepper","IsAdded":false}],
-    "prepTime": "60-150",
-    "cookTime": "30",
-    "totalTime": "90-180" 
+    "prepTime": 60,
+    "cookTime": 30,
+    "totalTime": 90 
   }
 ] 
